@@ -1,15 +1,22 @@
 <html>
   <head>
-    <title>Lab 4 CGI</title>
+    <title>Lab 4 - CGI</title>
   </head>
+  
   <body>
-    <div style="width:600px;background:#ADD8E6";border:2px;text-align:center">
+    <div style="width:600px;background:#ADD8E6;border:2px;text-align:center">
     <br>
-
+    <font size="3" color="black" face="helvetica">
+    <b>
+      <h4>Select an LED to change its brightness</h4>
+    </b>
     <form action ="/cgi-bin/" method="POST">
       <input type="radio" name="led" value="1"> LED 1 <br>
       <input type="radio" name="led" value="2"> LED 2 <br>
       <input type="radio" name="led" value="3"> LED 3 <br>
+      <b>
+        <h4>Use the slider to adjust the brightness level</h4>
+      </b>
       <input type="range" name="slider" min="0" max="100" value="0"/><br>
       <input type="submit" value="Change LED Brightness">
     </form>
