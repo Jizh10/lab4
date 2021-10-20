@@ -10,14 +10,16 @@
     <b>
       <h4>Select an LED to change its brightness</h4>
     </b>
-    <form action ="/cgi-bin/" method="POST">
-      <input type="radio" name="led" value="1"> LED 1 <br>
+    <form action ="/cgi-bin/lab4_cgi.py" method="POST">
+      <input type="radio" name="led" value="1" checked> LED 1 <br>
       <input type="radio" name="led" value="2"> LED 2 <br>
       <input type="radio" name="led" value="3"> LED 3 <br>
       <b>
         <h4>Use the slider to adjust the brightness level</h4>
       </b>
-      <input type="range" name="slider" min="0" max="100" value="0"/><br>
+      <input type="range" name="slider" min="0" max="100" value="0"/>
+      <br>
+      <br>
       <input type="submit" value="Change LED Brightness">
     </form>
     <br>
